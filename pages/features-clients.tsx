@@ -43,12 +43,12 @@ export default function ClientsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow mt-16 md:mt-20">
+      <main>
         {/* Hero Section */}
         <section className="bg-[#0065FF] text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6">Transforming Service Businesses</h1>
-            <h2 className="text-2xl md:text-4xl font-bold mb-6">for Clients</h2>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">for Clients</h1>
           </div>
         </section>
 
@@ -116,7 +116,7 @@ export default function ClientsPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

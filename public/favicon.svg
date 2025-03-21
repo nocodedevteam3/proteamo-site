@@ -1,0 +1,76 @@
+<svg width="1024" height="1024" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Central Node - The core of the logo -->
+  <circle cx="100" cy="100" r="18" fill="#0065ff"/>
+
+  <!-- Inner Ring - Surrounding the central node -->
+  <circle cx="100" cy="100" r="36" fill="none" stroke="#0065ff" stroke-width="3"/>
+
+  <!-- Fan Fills - Representing connected segments between inner and outer nodes -->
+  
+  <!-- Fan-shaped segment between 12 o'clock and 1 o'clock -->
+  <path d="M 100 64 L 60 30.72 A 80 80 0 0 1 140 30.7 L 100 64 Z" fill="#7BAFFF"/>
+
+  <!-- Fan-shaped segment between 4 o'clock and 5 o'clock -->
+  <path d="M 131.18 118 L 180 100 A 80 80 0 0 1 140 169.28 L 131.18 118 Z" fill="#7BAFFF"/>
+
+  <!-- Fan-shaped segment between 8 o'clock and 9 o'clock -->
+  <path d="M 68.82 118 L 60 169.28 A 80 80 0 0 1 20 100 L 68.82 118 Z" fill="#7BAFFF"/>
+
+  <!-- Connections (Inner to Outer) - Straight lines connecting inner nodes to outer nodes -->
+  
+  <!-- Connection from 4 o'clock inner node to 3 o'clock outer node -->
+  <line x1="131.18" y1="118" x2="180" y2="100" stroke="#0065FF" stroke-width="3" />
+  
+  <!-- Connection from 8 o'clock inner node to 7 o'clock outer node -->
+  <line x1="68.82" y1="118" x2="60" y2="169.28" stroke="#0065FF" stroke-width="3"/>
+  
+  <!-- Connection from 12 o'clock inner node to 11 o'clock outer node -->
+  <line x1="100" y1="64" x2="60" y2="30.72" stroke="#0065FF" stroke-width="3"/>
+
+  <!-- Additional Connections (Inner to External) - Extra lines representing extended connections between nodes -->
+  
+  <!-- Connection from 4 o'clock inner node to 5 o'clock external node -->
+  <line x1="131.18" y1="118" x2="140" y2="169.28" stroke="#0065FF" stroke-width="3" />
+  
+  <!-- Connection from 8 o'clock inner node to 9 o'clock external node -->
+  <line x1="68.82" y1="118" x2="20" y2="100" stroke="#0065FF" stroke-width="3"/>
+  
+  <!-- Connection from 12 o'clock inner node to 1 o'clock external node -->
+  <line x1="100" y1="64" x2="140" y2="30.72" stroke="#0065FF" stroke-width="3"/>
+
+  <!-- Curved Connections - Arcs connecting external nodes -->
+  
+  <!-- Arc from 5 o'clock to 3 o'clock -->
+  <path d="M 140 169.28 A 80 80 0 0 0 180 100" stroke="#0065FF" stroke-width="3" fill="#7BAFFF"/>
+  
+  <!-- Arc from 9 o'clock to 7 o'clock -->
+  <path d="M 20 100 A 80 80 0 0 0 60 169.28" stroke="#0065FF" stroke-width="3" fill="#7BAFFF"/>
+  
+  <!-- Arc from 1 o'clock to 11 o'clock -->
+  <path d="M 140 30.7 A 80 80 0 0 0 60 30.72" stroke="#0065FF" stroke-width="3" fill="#7BAFFF"/>
+
+  <!-- Inner Nodes - Nodes directly connected to the central hub -->
+  <g fill="#0065ff">
+    <circle cx="100" cy="64" r="10"/>       <!-- 12 o'clock inner node -->
+    <circle cx="131.18" cy="118" r="10"/>   <!-- 4 o'clock inner node -->
+    <circle cx="68.82" cy="118" r="10"/>    <!-- 8 o'clock inner node -->
+  </g>
+
+  <!-- Outer Nodes (Touching Internal) - Outer nodes that connect directly to inner nodes -->
+  <g fill="#0065ff">
+    <circle cx="180" cy="100" r="8"/>      <!-- 3 o'clock outer node -->
+    <circle cx="60" cy="30.72" r="8"/>     <!-- 11 o'clock outer node -->
+    <circle cx="60" cy="169.28" r="8"/>    <!-- 7 o'clock outer node -->
+  </g>
+
+  <!-- Outer Nodes (Touching External) - External nodes connected through curved paths -->
+  <g fill="#0065ff">
+    <circle cx="140" cy="30.7" r="8"/>     <!-- 1 o'clock external node -->
+    <circle cx="20" cy="100" r="8"/>       <!-- 9 o'clock external node -->
+    <circle cx="140" cy="169.28" r="8"/>   <!-- 5 o'clock external node -->
+  </g>
+
+  
+  
+</svg>

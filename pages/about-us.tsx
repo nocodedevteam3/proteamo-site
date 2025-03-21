@@ -6,13 +6,14 @@ export default function AboutUs() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow mt-16 md:mt-20">
-        <div className="flex flex-col items-center">
-          {/* Hero Section */}
-          <div className="w-full max-w-5xl px-4 py-8 md:py-12 mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8">Transforming Service Businesses</h1>
+      <main>
+      <section className="bg-[#0065FF] text-white py-16">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">Transforming Service Businesses</h1>
           </div>
+        </section>
 
+        <div className="flex flex-col items-center">
           {/* Content Sections */}
           <div className="w-full max-w-3xl mx-auto px-4 space-y-12 mb-16">
             {/* Mission Section */}
@@ -69,7 +70,7 @@ export default function AboutUs() {
           </div>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -153,7 +153,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow mt-16 md:mt-20">
+      <main>
         {/* Hero Section */}
         <section className="bg-[#0065FF] text-white py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
@@ -212,8 +212,8 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {industries.map((industry, index) => (
                 <div key={index} className="flex flex-col">
-                  <h3 className="text-lg font-semibold mb-2">{industry.title}</h3>
-                  <p className="text-gray-600 text-sm">{industry.description}</p>
+                  <h3 className="text-xl font-semibold mb-3">{industry.title}</h3>
+                  <p className="text-gray-600">{industry.description}</p>
                 </div>
               ))}
             </div>
@@ -257,7 +257,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

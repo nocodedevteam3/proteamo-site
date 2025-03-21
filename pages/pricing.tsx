@@ -93,15 +93,18 @@ export default function PricingPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow mt-16 md:mt-20">
+      <main>
         {/* Hero Section */}
+        <section className="bg-[#0065FF] text-white py-16">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">Flexible Pricing for All Businesses</h1>
+          </div>
+        </section>
+
         <section className="pt-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-5xl font-bold mb-10 text-[#0065FF] text-center">
-              Flexible Pricing for All Businesses
-            </h1>
-            <p className="text-lg mb-4 max-w-2xl">At ProTeamo, we believe in pricing that scales with your success.</p>
-            <p className="text-lg mb-8 max-w-3xl">
+            <p className="text-gray-600 mb-4">At ProTeamo, we believe in pricing that scales with your success.</p>
+            <p className="text-gray-600 mb-10">
               Our usage-based model ensures you only pay for what you use, while our tiered structure rewards
               high-volume users with even better value.
             </p>
@@ -184,7 +187,7 @@ export default function PricingPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
