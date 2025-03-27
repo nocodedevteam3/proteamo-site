@@ -168,6 +168,7 @@ export default function HomePage() {
                 priority
               />
             </div>
+            
             <h1 className="text-3xl md:text-5xl font-bold mb-6">Revolutionize Your Service Business</h1>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
               Unleash the power of seamless collaboration, effective performance, and client delight with our
