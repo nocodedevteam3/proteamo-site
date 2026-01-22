@@ -87,7 +87,8 @@ export default function Header() {
 
         {/* Access Button & Dropdown */}
         <div className="hidden md:block">
-          <DropdownMenu>
+          {/* COMMENTED OUT: Dropdown behavior - can be restored in the future */}
+          {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button className="bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white px-6" size="lg">
                 Access
@@ -109,7 +110,14 @@ export default function Header() {
                 </div>
               ))}
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
+
+          {/* Direct link to Tally demo request */}
+          <a href="https://tally.so/r/wbrkG0" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white px-6" size="lg">
+              Access
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -175,7 +183,8 @@ export default function Header() {
                     About Us
                   </Link>
                   <div className="pt-4">
-                    <DropdownMenu>
+                    {/* COMMENTED OUT: Dropdown behavior - can be restored in the future */}
+                    {/* <DropdownMenu>
                       <DropdownMenuTrigger asChild>
                         <Button className="w-full bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white" size="lg">
                           Access
@@ -197,7 +206,14 @@ export default function Header() {
                           </div>
                         ))}
                       </DropdownMenuContent>
-                    </DropdownMenu>
+                    </DropdownMenu> */}
+
+                    {/* Direct link to Tally demo request */}
+                    <a href="https://tally.so/r/wbrkG0" target="_blank" rel="noopener noreferrer">
+                      <Button className="w-full bg-[#FF6B00] hover:bg-[#FF6B00]/90 text-white" size="lg">
+                        Access
+                      </Button>
+                    </a>
                   </div>
                 </div>
               )}
